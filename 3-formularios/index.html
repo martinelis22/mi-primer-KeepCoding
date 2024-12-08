@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Primer formulario</h1>
+
+   <form action="resultados.html" method="get">
+
+ 
+
+    
+    <fieldset>
+        <legend>Datos de identificacion</legend>
+<label for="name">
+Nombre:
+</label>
+<br>
+   <input type="text" id="name" name="nombre" required>
+<br>
+   <label for="apellidos">
+Apellidos:
+   </label>
+   <br>
+   <input type="text" name="apellidos" id="apellidos">
+</fieldset>
+<br><br>
+
+
+<fieldset>
+    <legend>Datos de contacto</legend>
+   <label for="email">
+Correo electronico:
+   </label>
+   <br>
+   <input type="email" name="email" id="email" required>
+
+   <br>
+   <label for="telefono">
+    Telefono:
+   </label>
+   <br>
+   <input type="tel" name="telefono" id="telefono">
+</fieldset>
+<br><br>
+
+<fieldset>
+    <legend>
+        Sobre ti:
+    </legend>
+    <label for="tipo">
+Cual es el tipo de coche favorito?
+</label>
+<br>
+<select name="tipo" id="tipo">
+    <option value=""></option><!--asin la opcion sale en blanco-->
+    <option value="1">Deportivo</option><!--tambien podemos dejar "en blanco" y despues en opcion selecciona marca y se veria reflejado-->
+    <option value="2">Familiar</option><!--si ponemos selected pues saldria reflejado como primera opcion-->
+    <option value="3">Pick Up</option>
+    <option value="4"> Camper</option>
+    </select>
+
+<br>
+   <label for="color">
+Cual es tu color favorito?
+   </label>
+   <br>
+   <input type="color" name="color" id="color" value="#FF0000">
+   <br>
+   <label for="valoracion">Como valoras los cursos de KeepCoding?</label>
+   <br>
+   <input type="number" name="valoracion" id="valoracion" value="10">
+   <br>
+   <label for="bio">
+    Biografia:
+</label>
+<br>
+<textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+
+
+</fieldset>
+
+   <br>
+
+   <input type="submit" value="Enviar formulario">
+</form>
+</body>
+</html>

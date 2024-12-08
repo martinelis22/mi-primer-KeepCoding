@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet"> <!--el link se pone aquiantes del style-->
+
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');/*el import se pone aqui en el style*/
+
+    body{
+        background-color:   hsla(151, 96%, 55%, 1);
+    }
+
+        *{
+            font-family: "Just Me Again Down Here";
+            font-size: 18px;
+            
+        }
+        a{
+            display: block;
+            margin:10px;
+            background-color: whitesmoke;
+            opacity: .95;
+        }
+         .interno{
+            text-decoration: none;
+            font-family: "Just Me Again Down Here";
+            
+         }
+
+         a[href^="http://"]{
+            color:  #f5bb00ff;
+            font-weight: bold;
+         }   
+
+         a[target^="_b"]{
+            color:  #9d6381ff;
+         }
+         a[href$=".es"]{
+            color: rgb(255,255,255);
+            background-color: rgba(0, 0, 50, 0.5);
+         }
+
+    </style>
+</head>
+<body>
+   <a href="pagina1.html" class="interno">Interno</a>
+   <br>
+   <a href="http://www.google.es">Externo</a>
+   <br>
+   <a href="#indentificador">En pagina</a>
+   <br>
+   <a href="otro-sitio-html">Interno</a>
+   <br>
+   <a href="http://..." target="_top">Externo</a>
+   <br>
+   <a href="http://..." target="_blank">Externo target blank</a>
+   <br>
+</body>
+</html>
